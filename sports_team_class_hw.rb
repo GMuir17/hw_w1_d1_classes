@@ -9,6 +9,15 @@ class SportTeam
     @coach = coach
   end
 
+  def add_player(new_player)
+    @players.push(new_player)
+  end
+
+
+
+
+
+
   # def get_team_name()
   #   return @team_name
   # end
