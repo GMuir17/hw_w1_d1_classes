@@ -38,7 +38,10 @@ class SportsTeamClassTest < Minitest::Test
     assert_equal(false, team.check_player_in_team("Tiberius"))
   end
 
-
+  def test_update_points__win
+    team = SportTeam.new("The Triumverate", ["Gaius", "Marc", "Crassus", "Pompey"], "Julius", 0)
+    assert_equal(3, team.update_points("win"))
+  end
 
 
 

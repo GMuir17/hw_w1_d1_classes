@@ -21,6 +21,9 @@ class SportTeam
     return false
   end
 
+  def update_points(result)
+    return @points += 3 if result == "win"
+  end
 
 
 
