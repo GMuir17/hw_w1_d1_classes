@@ -23,6 +23,14 @@ class StudentClassTest < MiniTest::Test
     assert_equal("E19", student.set_cohort("E19"))
   end
 
+  def test_can_student_talk
+    student = CodeClanStudent.new("Gary", "E22")
+    assert_equal("I can sing!", student.talk())
+  end
 
+  def test_favourite_language
+    student = CodeClanStudent.new("Gary", "E22")
+    assert_equal("I adore Ruby!", student.favourite_language("Ruby"))
+  end
 
 end
