@@ -1,12 +1,13 @@
 class SportTeam
 
-  attr_reader(:team_name, :players, :coach)
+  attr_reader(:team_name, :players, :coach, :points)
   attr_writer(:coach)
 
-  def initialize(team_name, players, coach)
+  def initialize(team_name, players, coach, points)
     @team_name = team_name
     @players = players
     @coach = coach
+    @points = points
   end
 
   def add_player(new_player)
