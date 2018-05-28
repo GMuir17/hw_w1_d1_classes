@@ -43,10 +43,10 @@ class SportsTeamClassTest < Minitest::Test
     assert_equal(3, team.update_points("win"))
   end
 
-
-
-
-
+  def test_update_points__lose
+    team = SportTeam.new("The Triumverate", ["Gaius", "Marc", "Crassus", "Pompey"], "Julius", 0)
+    assert_equal(0, team.update_points("lose"))
+  end
 
 
 end
