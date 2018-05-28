@@ -18,6 +18,10 @@ class SportsTeamClassTest < Minitest::Test
     assert_equal("Julius", team.get_coach())
   end
 
+  def test_set_coach
+    team = SportTeam.new("The Triumverate", ["Gaius", "Marc", "Crassus", "Pompey"], "Julius")
+    assert_equal("Brutus", team.set_coach("Brutus"))
+  end
 
 
 end
